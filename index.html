@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora de IMC</title>
+</head>
+<body>
+
+    <section class="cabecalho">
+
+        <h1>Calculadora IMC</h1>
+
+    </section>
+
+    <section class="resumo">
+    <p>A calculadora de IMC (<b>Índice de Massa Corporal</b>) é importante porque oferece uma triagem rápida e gratuita para avaliar a relação entre peso e altura, ajudando a identificar riscos de saúde associados ao excesso ou à falta de peso.
+
+    </p>
+
+    </section>
+
+    <section class="utilidades">
+
+        <h2>Principais utilidades</h2>
+    
+        <ul>
+            <li>
+                <b>Triagem inicial:</b> Estima de forma simples se o peso está dentro de faixas usuais (abaixo do peso, adequado, sobrepeso ou obesidade).
+            </li>
+
+            <li>
+                <b>Alerta para riscos metabólicos e cardiovasculares:</b> Valores elevados sinalizam maior probabilidade de condições como hipertensão, diabetes tipo 2, dislipidemias, apneia do sono e doenças cardiovasculares; valores baixos podem indicar carências nutricionais ou perda de massa corporal.
+            </li>
+
+            <li>
+                <b>Acompanhamento de tendências:</b> Facilita observar mudanças ao longo do tempo e orientar a busca por avaliação profissional ou planos de cuidado.
+        </ul>
+    </section>
+
+    <section class="calculadora">
+
+        <h3>Faça o cálculo do seu IMC:</h3>
+
+        <form onsubmit="return calcular(event)">
+            <div class="lado-esquerdo">
+                <label for="peso">Digite seu peso (em kg):</label>
+                <input type="text" name="peso" id="peso" placeholder="Ex: 70"> <br><br>
+            </div>
+
+            <div class="lado-direito">
+                <label for="altura">Digite sua altura (em m):</label>
+                <input type="text" name="altura" id="altura" placeholder="Ex: 1.90"> <br><br>
+            </div>    
+
+            <button class="botao" type="submit" value="Calcular IMC">Calcular IMC</button>
+
+        </form>
+
+    </section>
+
+    <section class="resultado">
+
+        <div id="resultado"></div>
+
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
